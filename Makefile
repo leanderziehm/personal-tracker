@@ -4,14 +4,10 @@ backend:
 	cd backend && make
 
 frontend:
-	cd frontend && npm start
+	cd frontend && make
 
 database:
 	cd database && make database
-
-all:
-	$(MAKE) -j3 backend frontend database
-
 
 start:
 	tmux new-session -d -s personal-tracker \; \

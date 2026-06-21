@@ -1,2 +1,2 @@
-dev:
-	@set -a && . ./.env && ./mvnw spring-boot:run
+run:
+	set -a && . ./.env && set +a && pnpm run dev
